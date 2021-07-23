@@ -1,0 +1,173 @@
+@media only screen and (max-width: 500px) {
+  #docInfo {
+    display: none;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-user-select: none;
+}
+
+body {
+  overflow: hidden;
+  background: white;
+}
+
+#header {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #FFFFFF;
+  text-align: center;
+  font-size: 10px;
+  -webkit-app-region: drag;
+  -webkit-user-select: none;
+}
+
+#menuButton,
+#title,
+#min,
+#quit {
+  -webkit-app-region: no-drag;
+}
+
+#menuButton,
+#title {
+  float: left;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier;
+}
+
+#quit,
+#min {
+  float: right;
+  background: #FFFFFF;
+  color: #363636;
+  -webkit-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+}
+
+#quit:hover,
+#min:hover {
+  cursor: pointer;
+  background: #363636;
+  color: #FFFFFF;
+}
+
+#menuButton {
+  font-size: 13px;
+  padding: 4.5px 20px;
+  -webkit-transition-duration: 0.25s;
+          transition-duration: 0.25s;
+}
+
+#menuButton:hover {
+  background-color: #363636;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+#title {
+  font-size: 14px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5.8px;
+  cursor: none;
+}
+
+#quit {
+  font-size: 15px;
+  padding: 3.2px 17px;
+}
+
+#min {
+  font-size: 19.75px;
+  padding: 0px 20px;
+  padding-top: 2.4px;
+}
+
+#scrollProgressContainer {
+  margin-top: 27px;
+  width: 100%;
+  height: 0.2rem;
+  background: #E5E5E5;
+}
+
+#progressBar {
+  height: 0.2rem;
+  background: #363636;
+  width: 0%;
+}
+
+#footer {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #E5E5E5;
+  text-align: center;
+  font-size: 10px;
+  -webkit-user-select: none;
+}
+
+#docInfo,
+#currentlyEditing {
+  font-size: 11.5px;
+  padding: 3.5px 10px;
+  color: #363636;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier;
+}
+
+#docInfo,
+#charCount {
+  float: right;
+}
+
+#currentlyEditing {
+  float: left;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FFFFFF;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #E5E5E5;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  border-radius: 10px;
+  background: #363636;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+::-webkit-scrollbar-thumb:active {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+#textarea {
+  left: 50px;
+  font-family: consolas, "Liberation Mono", Menlo, Courier;
+  outline: none;
+  resize: none;
+  border: none;
+  color: #363636;
+  font-size: 12px;
+}
+/*# sourceMappingURL=styles.css.map */

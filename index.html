@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>NXT Editor - Platinum</title>
+    <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body onload="resize()">
+    <header>
+        <ul id="header">
+            <li id="menuButton" tooltip="Menu">☰</li>
+            <li id="title">NXT Editor - Platinum</li>
+            <li id="quit" tooltip="Close Window" onclick="quit()">✕</li>
+            <li id="min" tooltip="Hide Window" onclick="min()">&#9147</li>
+        </ul>
+
+    </header>
+    <div id="scrollProgressContainer">
+        <div id="progressBar"></div>
+    </div>
+    <textarea name="textarea" id="textarea" placeholder="Type something..."></textarea>
+    <footer>
+        <ul id="footer">
+            <li id="currentlyEditing">Currently Editing: <span id="currentlyOpen">Open a file</span></li>
+            <li id="docInfo"></li>
+        </ul>
+    </footer>
+
+    <script src="./scripts/render.js" charset="utf-8"></script>
+</body>
+
+</html>

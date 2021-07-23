@@ -1,0 +1,52 @@
+{
+    "name": "nxteditorplatinum",
+    "productName": "NXT Editor - Platinum",
+    "version": "0.1.1",
+    "author": {
+        "name": "Alex Hawking",
+        "email": "alexrhawking@gmail.com",
+        "url": "http://alexhawking.now.sh/"
+    },
+    "description": "The best app for editing .txt files",
+    "main": "main.js",
+    "license": "BSD-3-Clause",
+    "scripts": {
+        "start": "electron .",
+        "pack": "electron-builder --dir",
+        "dist": "electron-builder build"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "auto-launch": "^5.0.5",
+        "builder": "^5.0.0",
+        "electron": "^9.2.1",
+        "electron-builder": "^22.8.0",
+        "electron-packager": "^14.2.1"
+    },
+    "build": {
+        "productName": "NXT Editor - Platinum",
+        "appId": "org.te",
+        "win": {
+            "target": [
+                "nsis",
+                "msi"
+            ],
+            "icon": "build/icon.ico"
+        },
+        "fileAssociations": [{
+            "name": "Text Files",
+            "description": "Plain Text File",
+            "ext": [
+                "txt"
+            ]
+        }],
+        "files": [
+            "**/*",
+            "!media{/*}"
+        ],
+        "directories": {
+            "buildResources": "build",
+            "output": "release"
+        }
+    }
+}
