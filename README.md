@@ -1,4 +1,4 @@
-<p>NXT Editor is a NeXT generation application for editing .txt files. It is packed with clever and interesting features to enhance your experience working with text files.</p>
+<p>NXT Editor is a NeXT generation application for editing .txt files. It is packed with clever and interesting features to enhance your experience working with text files. Buy it <a href="https://alexhawking.itch.io/nxt-editor">here</a>.</p>
 <h2>Features</h2>
 <p>NXT Editor is packed with cool and interesting features that increase the usability of the app, the ease of creation of text files and that increase the readability and "cool" (if you call UTF-8 characters cool) factor of your .txt files.&nbsp;</p>
 <h4>Fonts</h4>
